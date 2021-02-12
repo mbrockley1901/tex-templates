@@ -1,0 +1,240 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage{color}
+\usepackage{threeparttable}
+
+\begin{document}
+
+\title{\LaTeX\ How To}
+\author{Matthew W. Brockley}
+\date{\today}
+\maketitle
+
+\pagenumbering{roman}
+\tableofcontents
+\newpage
+\pagenumbering{arabic}
+
+\section{Introduction}
+This is the introduction.
+
+\section{Document Structure Example}
+
+\subsection{Stage 1}
+\label{sec1}
+demo 1
+\subsection{results}
+This is how you make a reference to a label that you created.  Using the code from \ref{sec1} on page \pageref{sec1}.
+
+\section{Typesetting Text}
+
+\subsection{Font Effects}
+\textit{text in italics} \\
+\textsl{slanted text} \\
+\textsc{smallcaps} \\
+\textbf{words in bold} \\
+\texttt{words in teletype} \\
+\textsf{sans serif} \\
+\textrm{roman words} \\
+\underline{underlines words} \\
+
+\subsection{Colored Text}
+Colored text can be used by using the \\ \texttt{\textbackslash usepackage\{color\}} \\ package.
+
+This is an example or writing the word {\color{red}fire} in the color red.
+The following colors are recognized by the package: {\color{red}red}, {\color{blue}blue}, {\color{cyan}cyan}, {\color{yellow}yellow}, {\color{green}green}, {\color{magenta}magenta}, black, white. \\
+
+More information on color is in the \LaTeX\ workbook.
+
+\subsection{Font Sizes}
+Font Size Examples:
+
+{\tiny tiny words}
+{\scriptsize scriptsize words}
+{\footnotesize footnote words}
+{\normalsize  normal words}
+{\large large words}
+{\Large Large words}
+{\LARGE LARGE words}
+{\huge huge words}
+
+
+
+
+\subsection{Lists}
+
+Example of a list: \\
+
+\begin{enumerate}
+\item First thing
+\item Second thing
+\begin{itemize}
+\item A sub-thing
+\item Another sub-thing
+\end{itemize}
+\item Third thing
+\end{enumerate}
+
+The bullet format can be changed by using \texttt{\textbackslash item[x]} where x is the bullet character.
+
+\subsection{Comments \& Spacing}
+ % example of a comment 
+There is a comment in this line, %effect subsides when enter is pressed
+but not in this one.
+
+\subsection{Special Characters}
+
+Item \#1A\textbackslash642 costs \$8 \& is sold at a \~{}10\% profit.
+
+\section{Tables}
+
+This is a demonstration of how to make some tables: \\
+
+\begin{tabular}{l|r|r}
+Item & Quantity & Price (\$) \\
+\hline
+Nails & 500 & 0.34 \\
+Wooden boards & 100 & 4.00 \\
+Bricks & 240 & 11.50 \\
+\end{tabular}
+
+\begin{tabular}{|l|c c c|}
+\hline
+{} & {} & Year & {} \\
+\cline{2-4}
+City & 2006 & 2007 & 2008 \\
+\hline
+London & 45789 & 46551 & 51298 \\
+Berlin & 34549 & 32543 & 29870 \\
+Paris & 49835 & 51009 & 51970 \\
+\hline
+\end{tabular}
+
+% Table created by stargazer v.5.2.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
+% Date and time: Wed, Dec 09, 2020 - 9:58:34 PM
+\begin{table}[!htbp] \centering 
+  \caption{} 
+  \label{} 
+\begin{tabular}{@{\extracolsep{5pt}}lccccccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+Statistic & \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Mean} & \multicolumn{1}{c}{St. Dev.} & \multicolumn{1}{c}{Min} & \multicolumn{1}{c}{Pctl(25)} & \multicolumn{1}{c}{Pctl(75)} & \multicolumn{1}{c}{Max} \\ 
+\hline \\[-1.8ex] 
+ï..NADPH\_conc & 12 & 0.002 & 0.003 & 0 & 0.000 & 0.001 & 0 \\ 
+rate\_min & 12 & 79.934 & 42.827 & 0 & 58.0 & 104.6 & 133 \\ 
+rate\_sec & 12 & 1.332 & 0.714 & 0 & 1.0 & 1.7 & 2 \\ 
+kcat & 12 & 0.181 & 0.097 & 0 & 0.1 & 0.2 & 0 \\ 
+\hline \\[-1.8ex] 
+\end{tabular} 
+\end{table}
+
+% Table created by stargazer v.5.2.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
+% Date and time: Wed, Dec 09, 2020 - 10:04:21 PM
+\begin{table}[!htbp] \centering 
+  \caption{} 
+  \label{} 
+\begin{tabular}{@{\extracolsep{5pt}}lccccccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+Statistic & \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Mean} & \multicolumn{1}{c}{St. Dev.} & \multicolumn{1}{c}{Min} & \multicolumn{1}{c}{Pctl(25)} & \multicolumn{1}{c}{Pctl(75)} & \multicolumn{1}{c}{Max} \\ 
+\hline \\[-1.8ex] 
+rating & 30 & 64.633 & 12.173 & 40 & 58.8 & 71.8 & 85 \\ 
+complaints & 30 & 66.600 & 13.315 & 37 & 58.5 & 77 & 90 \\ 
+privileges & 30 & 53.133 & 12.235 & 30 & 45 & 62.5 & 83 \\ 
+learning & 30 & 56.367 & 11.737 & 34 & 47 & 66.8 & 75 \\ 
+raises & 30 & 64.633 & 10.397 & 43 & 58.2 & 71 & 88 \\ 
+critical & 30 & 74.767 & 9.895 & 49 & 69.2 & 80 & 92 \\ 
+advance & 30 & 42.933 & 10.289 & 25 & 35 & 47.8 & 72 \\ 
+\hline \\[-1.8ex] 
+\end{tabular} 
+\end{table}
+
+\begin{table}[!htbp] \centering 
+  \caption{Oxygraph Table of Data} 
+  \label{} 
+\begin{tabular}{@{\extracolsep{5pt}} ccccccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ï..NADPH\_conc & rate\_min & rate\_sec & kcat & X & X.1 & X.2 \\ 
+\hline \\[-1.8ex] 
+$0$ & $0$ & $0$ & $0$ &  &  &  \\ 
+$0.00001$ & $22.700$ & $0.378$ & $0.051$ &  &  &  \\ 
+$0.00002$ & $27.090$ & $0.452$ & $0.061$ &  &  &  \\ 
+$0.00004$ & $68.320$ & $1.139$ & $0.155$ &  &  &  \\ 
+$0.0001$ & $78.150$ & $1.302$ & $0.177$ &  &  &  \\ 
+$0.0001$ & $89.500$ & $1.492$ & $0.202$ &  &  &  \\ 
+$0.0003$ & $97.190$ & $1.620$ & $0.220$ &  &  &  \\ 
+$0.001$ & $99.260$ & $1.654$ & $0.224$ &  &  &  \\ 
+$0.001$ & $101.800$ & $1.697$ & $0.230$ &  &  &  \\ 
+$0.002$ & $112.900$ & $1.882$ & $0.255$ &  &  &  \\ 
+$0.005$ & $129.400$ & $2.157$ & $0.293$ &  &  &  \\ 
+$0.009$ & $132.900$ & $2.215$ & $0.301$ &  &  &  \\ 
+\hline \\[-1.8ex] 
+\end{tabular}
+
+\begin{tablenotes}
+
+\item \footnotesize{Collected Data using an Hanstech oxygraph probe to determine inital rate values for a variety of NADPH concentrations.}
+
+\end{tablenotes}
+ 
+\end{table} 
+
+\section{Figures}
+
+\section{Equations}
+\subsection{Inserting Equations}
+
+Math mode is accessed bracketing text with \$s.  Use two \$s to get the equation onto its own line.
+
+$$1+2=3$$
+
+Labeled Equation:
+\begin{equation}
+1+2=3
+\end{equation}
+
+Equation Array:
+\begin{eqnarray}
+a & = & b + c\\
+{} & = & y - z
+\end{eqnarray}
+
+\subsection{Mathematical Symbols}
+Superscript and Subscript:\\
+$n^2$\\
+$n_2$\\
+$b_{a-2}$\\
+
+Fractions:
+$\frac{numerator}{denominator}$\\
+Fractions can be nested\\
+
+Roots:
+$\sqrt[index]{expression}$\\
+
+Summations and Integrals:
+$$\sum_{x=1}^5 2^x$$\\
+$$\int_a^b f(x)dx$$
+
+\subsection{Examples}
+\begin{equation}
+e = mc^2
+\end{equation}
+\begin{equation}
+\pi = \frac{c}{d}
+\end{equation}
+\begin{equation}
+\frac{d}{dx}e^x = e^x
+\end{equation}
+\begin{equation}
+f(x) = \sum_i = 0^\infty \frac{f^{(i)} (0)}{i!}x^i
+\end{equation}
+\begin{equation}
+x = \sqrt{\frac{x_i}{z} y}
+\end{equation}
+
+\section{Inserting References}
+
+
+
+\end{document}

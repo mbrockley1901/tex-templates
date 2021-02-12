@@ -1,4 +1,8 @@
 \documentclass[12pt]{article}
+\usepackage{chemfig}
+\usepackage[backend=biber, style = chem-acs]{biblatex}
+\addbibresource{acs_bibliography.bib}
+
 
 %margins
 \usepackage[letterpaper]{geometry}
@@ -55,12 +59,12 @@ This is the abstract
 %introduction
 \newpage
 \noindent\textbf{Introduction}\\
-This is the introduction
+This is the introduction \cite{giddings2020characterization}.
 
 %Experimental
 \newpage
 \noindent\textbf{Experimental}\\
-This is the experimental
+This is the experimental \cite{bontemps2018global}
 
 %Results
 \newpage
@@ -76,6 +80,10 @@ This is the discussion
 \newpage
 \noindent\textbf{Conclusions}\\
 These are the conclusions
+
+%bibliography
+\newpage
+\printbibliography
 
 
 \end{flushleft}
