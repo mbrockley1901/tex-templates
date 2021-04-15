@@ -25,6 +25,10 @@
 
 \setlength\headsep{0.333in}
 
+%bibliography
+\usepackage[style=mla, backend=biber]{biblatex}
+\addbibresource{mla_paper_sources.bib}
+
 \begin{document}
 \begin{flushleft}
 
@@ -44,11 +48,19 @@ Matthew Brockley\\
 
 %begin body
 
+I read the \textit{Iliad} by Homer \autocite{homer2011}
+
+%bibliography
+\begin{center}
+	Works Cited
+\end{center}
+\printbibliography[heading=none]
+
 
 %honor code
 \begin{center}
 \singlespacing
-I have neither given nor receieved unauthorized aid on this assignment.\\
+I have neither given nor received unauthorized aid on this assignment.\\
 Matthew W. Brockley
 \end{center}
 
