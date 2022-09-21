@@ -4,8 +4,12 @@
 \usepackage[margin=1in]{geometry}
 \usepackage{amsmath}
 \usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{dsfont}
 \usepackage{fancyhdr}
 \usepackage{pgfplots}
+\usepackage{graphicx}
+\usepackage{float}
 \pgfplotsset{compat=1.16}
 
 %Proofs
@@ -14,28 +18,38 @@
 \newtheorem{claim}{Claim}
 \renewcommand\qedsymbol{$\blacksquare$}
 
+%helpful shortcuts
+\newcommand{\dudt}{\frac{\partial u}{\partial t}}
+\newcommand{\dudx}{\frac{\partial u}{\partial x}}
+\newcommand{\dudy}{\frac{\partial u}{\partial y}}
+\newcommand{\pu}{\partial u}
+\newcommand{\pt}{\partial t}
+\newcommand{\px}{\partial x}
+\newcommand{\py}{\partial y}
+\newcommand{\p}{\partial}
+\newcommand{\ut}{u_t}
+\newcommand{\utt}{u_{tt}}
+\newcommand{\ux}{u_x}
+\newcommand{\uxx}{u_{xx}}
+\newcommand{\uy}{u_y}
+\newcommand{\uyy}{u_{yy}}
+\newcommand{\uxt}{u_{xt}}
+
+
 %Heading
 \author{Matt Brockley}
-\title{Graph Theory HW}
+\title{MATH HW}
 \pagestyle{fancy}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 \fancyhf{}
 \lhead{
 	Matt Brockley\\
-	MATH0247A: Graph Theory
+	MATH0310B: Probability
 }
 \rhead{Brockley \thepage}
 
 %Document
 \begin{document}
-	%HW PROBLEMS START HERE
-	
-	
-	
-	%Honor Code
-	\begin{center}
-		I have neither given nor received unauthorized aid on this assignment.\\
-		Matthew W. Brockley	
-	\end{center}
+
 \end{document}
